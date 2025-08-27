@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple calc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="newcal.css">
+    <script src="newcal.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Red's Calculator</h1>
+        <h1 class="display-5 text-primary bg-light p-3 rounded text-center shadow">
+            Calculate 
+        </h1>
+
+        <div class="center-content" id="calculation-area">
+            <div class="input-row">
+                <div class="input-group">
+                    <span class="input-group-text">1st Number</span>
+                    <input type="number" id="num1" class="form-control">
+                </div>
+
+                <div class="operator-group">
+                    <select class="operator-select">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="%">%</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">2nd Number</span>
+                    <input type="number" class="form-control num-input">
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center gap-3">
+            <button type="button" class="btn btn-primary calculate-btn rounded-circle" style="width: 50px" onclick="calculate()">=</button>
+            
+            <div class="input-group result-container" style="max-width: 300px;">
+                <span class="input-group-text">Result</span>
+                <button id="result" class="btn btn-success btn-circle" disabled></button>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <button type="button" class="btn btn-primary calculate-btn" style="width: 150px" onclick="addOperator()">Add Operator</button>
+        </div>
+    </div>
+
+    <div class="video-bg">
+        <video autoplay muted loop>
+            <source src="Maths Background Motion Graphics.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+
+
+    
+</body>
+
+</html>
